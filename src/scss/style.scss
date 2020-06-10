@@ -2,18 +2,4 @@
 @import "mixin.scss";
 @import "fonts";
 
-// body {
-//     width: 100vh;
-//     font-size: 26px;
-//     color: red;
-//     background: url(../img/Test.jpg) 0 0 no-repeat;
-//     background-size: cover;
-// }
-
-img {
-    width: 100%;
-}
-
-h1 {
-    @include adaptiv-font(36, 14);
-}
+// @include adaptiv-font (36,14);
