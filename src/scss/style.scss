@@ -1,18 +1,19 @@
-//SCSS МИКСИН ДЛЯ ПОДКЛЮЧЕНИЯ ШРИФТОВ
-@mixin font($font_name, $file_name, $weight, $style) {
-    @font-face {
-        font-family: $font_name;
-        font-display: swap;
-        src: url("../fonts/#{$file_name}.woff") format("woff"), url("../fonts/#{$file_name}.woff2") format("woff2");
-        font-weight: #{$weight};
-        font-style: #{$style};
-    }
-}
-
+@import "config.scss";
+@import "mixin.scss";
 @import "fonts";
 
-body {
-    font-size: 26px;
-    color: red;
-    background: url(../img/Test.jpg) 0 0 no-repeat;
+// body {
+//     width: 100vh;
+//     font-size: 26px;
+//     color: red;
+//     background: url(../img/Test.jpg) 0 0 no-repeat;
+//     background-size: cover;
+// }
+
+img {
+    width: 100%;
+}
+
+h1 {
+    @include adaptiv-font(36, 14);
 }
